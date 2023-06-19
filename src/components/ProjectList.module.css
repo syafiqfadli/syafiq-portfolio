@@ -1,0 +1,17 @@
+.con_proj {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 40%;
+    padding: 0 40px;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 900px) {
+    .con_proj {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+}

@@ -1,0 +1,100 @@
+.container {
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+    color: var(--primary);
+    padding: 0 40px;
+    width: 90%;
+}
+
+.con_left {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+#bold {
+    padding: 10px 0;
+    line-height: 60px;
+    font-size: 72px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.con_left p {
+    font-size: 24px;
+}
+
+.con_left button {
+    width: 300px;
+    padding: 20px;
+    font-size: 16px;
+    border: 1px solid var(--primary);
+    border-radius: 20px;
+    color: var(--primary);
+    background-color: white;
+    margin: 50px 0;
+}
+
+.con_left button:hover {
+    cursor: pointer;
+    background-color: var(--primary);
+    color: white;
+    transition: 0.3s;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+}
+
+.icon img {
+    padding: 0 10px;
+    height: 30px;
+}
+
+#shopee {
+    height: 40px;
+}
+
+.con_right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.con_right img {
+    max-width: 90%;
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 50px;
+        padding: 0;
+    }
+
+    .con_left {
+        align-items: center;
+        flex: 2;
+    }
+
+    #bold {
+        font-size: 60px;
+    }
+
+    .con_left p {
+        text-align: center;
+    }
+
+    .con_left button {
+        margin: 20px 0;
+    }
+
+    .con_right img {
+        max-width: 70%;
+    }
+}
