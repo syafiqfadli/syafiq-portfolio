@@ -38,7 +38,7 @@ class Constants {
       {
         type: ProjectType.ServerSide,
         title: 'Food Ordering System',
-        desc: 'To manage user authentication and database using ExpressJS',
+        desc: 'To manage user authentication and database using ExpressJS. Implement API for front end with CRUD Operation.',
       },
       {
         type: ProjectType.DeepLearning,

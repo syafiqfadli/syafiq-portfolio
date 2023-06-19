@@ -5,6 +5,11 @@ import linkedIn from '../assets/Linkedin.svg';
 import shopee from '../assets/Shopee.png';
 import styles from './Home.module.css';
 
+function goToAbout() {
+  var access = document.getElementById('about');
+  access!.scrollIntoView();
+}
+
 const Home = () => {
   return (
     <main className={styles.container} id='home'>
@@ -14,7 +19,7 @@ const Home = () => {
           <p id={styles.bold}>I am a Full Stack Developer</p>
           <p>Welcome to my portfolio website</p>
         </div>
-        <button>Learn more about me</button>
+        <button onClick={goToAbout}>Learn more about me</button>
         <div className={styles.icon}>
           <Link to='https://github.com/syafiqfadli' target='_blank'>
             <img src={github} alt='Github' />

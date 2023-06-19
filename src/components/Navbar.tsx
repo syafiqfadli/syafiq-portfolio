@@ -16,7 +16,7 @@ const Navbar = () => {
         <a href='#home' className={styles.nav_link}>
           Home
         </a>
-        <a href='' className={styles.nav_link}>
+        <a href='#about' className={styles.nav_link}>
           About
         </a>
         <a href='#experience' className={styles.nav_link}>

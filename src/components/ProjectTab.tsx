@@ -1,5 +1,6 @@
 import { FunctionComponent } from 'react';
 import { ProjectType } from '../utils/enums';
+import Constants from '../utils/constants';
 
 interface ProjectTabProps {
   tab: string;
@@ -38,6 +39,7 @@ const ProjectTab: FunctionComponent<ProjectTabProps> = (props) => {
       }}
     >
       {props.tab}
+      {props.tab === ProjectType.All ? ` (${Constants.projects.length})` : ''}
     </div>
   );
 };
