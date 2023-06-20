@@ -4,8 +4,9 @@ import Experience from '../pages/Experience';
 import Project from './Project';
 import About from './About';
 import styles from './Main.module.css';
-import arrowUp from '../assets/arrow-up.svg'
+import arrowUp from '../assets/arrow-up.svg';
 import { useEffect, useState } from 'react';
+import Footer from '../components/Footer';
 
 const Main = () => {
   const [showTopBtn, setShowTopBtn] = useState(false);
@@ -30,7 +31,7 @@ const Main = () => {
     <>
       {showTopBtn ? (
         <button onClick={goToTop} id={styles.scroll_btn}>
-          <img src={arrowUp} alt="Arrow Up" />
+          <img src={arrowUp} alt='Arrow Up' />
         </button>
       ) : (
         <></>
@@ -40,6 +41,7 @@ const Main = () => {
       <About />
       <Experience />
       <Project />
+      <Footer />
     </>
   );
 };
