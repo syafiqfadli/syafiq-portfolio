@@ -3,7 +3,6 @@ import utp from '../assets/UTP.png';
 import { ProjectType } from './enums';
 
 class Constants {
-
   static jobs = [
     {
       logo: versa,

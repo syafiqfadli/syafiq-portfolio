@@ -1,5 +1,5 @@
 import styles from './About.module.css';
-import syafiq from '../assets/Syafiq.jpg';
+import syafiq from '../assets/Syafiq.png';
 
 const About = () => {
   return (

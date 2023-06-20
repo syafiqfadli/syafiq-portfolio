@@ -34,14 +34,13 @@
     justify-content: center;
     width: 50%;
     margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .me img {
-    height: 40vh;
-}
-
-.name {
-    transform: translate(-120px, 0);
+    margin-right: 20px;
+    height: 25vh;
 }
 
 .name p {
@@ -95,13 +94,16 @@
 
     .me {
         flex-direction: column;
-        transform: translate(0, -40px);
+    }
+
+    .me img {
+        margin: 0;
+        margin-bottom: 20px;
     }
 
     .name {
         display: flex;
         text-align: center;
-        transform: translate(0, -40px);
     }
 
     .me_desc {

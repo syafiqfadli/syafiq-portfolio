@@ -21,7 +21,28 @@
 }
 
 .nav_list_mobile {
+    cursor: pointer;
     display: none;
+}
+
+.hamburger {
+    position: relative;
+    z-index: 10;
+}
+
+.mobile_link {
+    height: 40vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    padding-top: 70px;
+    box-shadow: 10px 10px 8px #888888;
+}
+
+.mobile_link .nav_link {
+    padding: 20px;
 }
 
 .nav_list_web {
