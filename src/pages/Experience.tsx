@@ -1,6 +1,6 @@
 import JobCard from '../components/JobCard';
-import styles from './Experience.module.css';
 import Constants from '../utils/constants';
+import styles from './Experience.module.css';
 
 const Experience = () => {
   return (
@@ -19,12 +19,12 @@ const Experience = () => {
       <div className={styles.con_exp}>
         {Constants.jobs.map((job, i) => {
           return (
-            <div className={styles.card}>
+            <div key={i} className={styles.card}>
               <JobCard
-                key={i}
                 logo={job.logo}
                 company={job.company}
                 position={job.position}
+                year={job.year}
                 desc={job.desc}
               />
             </div>

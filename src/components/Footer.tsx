@@ -35,7 +35,7 @@ const Footer = () => {
       </div>
       <div className={styles.credit}>
         <p>
-          Designed by <a href='#about'>Me</a>
+          Designed by <a href='#about'>Me</a> © 2024
         </p>
       </div>
     </footer>

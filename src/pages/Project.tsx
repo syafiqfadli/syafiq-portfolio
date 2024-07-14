@@ -1,7 +1,7 @@
+import { useState } from 'react';
 import ProjectList from '../components/ProjectList';
 import ProjectTab from '../components/ProjectTab';
 import { ProjectType } from '../utils/enums';
-import { useState } from 'react';
 import styles from './Project.module.css';
 
 const tabs = [
@@ -31,9 +31,8 @@ const Project = () => {
         <div className={styles.proj_tabs}>
           {tabs.map((tab, index) => {
             return (
-              <div className={styles.tab}>
+              <div key={index} className={styles.tab}>
                 <ProjectTab
-                  key={index}
                   tab={tab}
                   selectedTab={selectedTab}
                   isHover={isHover}

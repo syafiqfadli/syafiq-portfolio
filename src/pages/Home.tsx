@@ -1,11 +1,10 @@
 import { Link } from 'react-router-dom';
 import character from '../assets/Character.svg';
-import github from '../assets/Github.svg';
-import linkedIn from '../assets/Linkedin.svg';
-import shopee from '../assets/Shopee.png';
+import github from '../assets/socials/Github.svg';
+import linkedIn from '../assets/socials/Linkedin.svg';
 import styles from './Home.module.css';
 
-function goToAbout() {
+const goToAbout = () => {
   var access = document.getElementById('about');
   access!.scrollIntoView();
 }
@@ -29,9 +28,6 @@ const Home = () => {
             target='_blank'
           >
             <img src={linkedIn} alt='Linked In' />
-          </Link>
-          <Link to='https://shopee.com.my/syafiqs282' target='_blank'>
-            <img id={styles.shopee} src={shopee} alt='Shopee' />
           </Link>
         </div>
       </div>

@@ -1,11 +1,11 @@
 .card {
-    height: 80%;
     padding: 40px;
     background-color: var(--primary);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
 }
 
 .card p {
@@ -36,6 +36,11 @@
 #position {
     color: var(--tertiary);
     font-size: 20px;
+}
+
+#year {
+    color: white;
+    margin-bottom: 20px;
 }
 
 #desc {

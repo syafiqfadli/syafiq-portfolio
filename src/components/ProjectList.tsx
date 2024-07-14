@@ -1,8 +1,8 @@
 import { FunctionComponent } from 'react';
-import styles from './ProjectList.module.css';
 import Constants from '../utils/constants';
-import ProjectCard from './ProjectCard';
 import { ProjectType } from '../utils/enums';
+import ProjectCard from './ProjectCard';
+import styles from './ProjectList.module.css';
 
 interface ProjectListProps {
   selectedTab: ProjectType;
@@ -16,9 +16,9 @@ const ProjectList: FunctionComponent<ProjectListProps> = (props) => {
           return (
             <div key={index} className={styles.card}>
               <ProjectCard
-                key={index}
                 title={project.title}
                 desc={project.desc}
+                link={project.link}
               />
             </div>
           );
@@ -28,9 +28,9 @@ const ProjectList: FunctionComponent<ProjectListProps> = (props) => {
           return (
             <div key={index} className={styles.card}>
               <ProjectCard
-                key={index}
                 title={project.title}
                 desc={project.desc}
+                link={project.link}
               />
             </div>
           );
