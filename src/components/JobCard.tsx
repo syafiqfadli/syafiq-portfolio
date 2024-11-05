@@ -14,14 +14,24 @@ const JobCard: FunctionComponent<JobCardProps> = (props) => {
     const startJob = `1 ${year.split('-')[0].trim()}`;
     const endJob = `1 ${year.split('-')[1].trim()}`;
     const startDate = new Date(startJob);
-    const endDate = endJob.includes('Current') ? new Date() : new Date(endJob);
+    const endDate = endJob.includes('Present') ? new Date() : new Date(endJob);
     const startYear = startDate.getFullYear();
     const startMonth = startDate.getMonth();
     const endYear = endDate.getFullYear();
     const endMonth = endDate.getMonth();
 
-    const months = (endYear - startYear) * 12 + (endMonth - startMonth) + 1;
-    return months;
+    const totalMonths =
+      (endYear - startYear) * 12 + (endMonth - startMonth) + 1;
+
+    if (totalMonths >= 12) {
+      const years = Math.floor(totalMonths / 12);
+      const months = totalMonths % 12;
+      return `${years} year${years > 1 ? 's' : ''}, ${
+        months ? `${months} month${months > 1 ? 's' : ''}` : ''
+      }`;
+    }
+
+    return `${totalMonths} month${totalMonths > 1 ? 's' : ''}`;
   };
 
   return (
@@ -33,9 +43,10 @@ const JobCard: FunctionComponent<JobCardProps> = (props) => {
           <p id={styles.position}>{props.position}</p>
         </div>
       </div>
-      <p id={styles.year}>
-        {props.year} ({getDuration(props.year)} months)
-      </p>
+      <div className={styles.card_time}>
+        <p id={styles.year}>{props.year}</p>
+        <p id={styles.duration}>({getDuration(props.year)})</p>
+      </div>
       <p id={styles.desc}>{props.desc}</p>
     </div>
   );

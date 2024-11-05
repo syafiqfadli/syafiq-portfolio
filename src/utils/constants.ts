@@ -9,7 +9,7 @@ class Constants {
       logo: led,
       company: 'LED Vision Sdn Bhd',
       position: 'Software Engineer',
-      year: 'Sept 2023 - Current',
+      year: 'Sept 2023 - Present',
       desc: 'I specialize in frontend development for dashboards, creating intuitive and responsive user interfaces. I oversee the deployment process to ensure smooth and efficient rollouts of new features and updates. Additionally, I provide support to my team in monitoring and troubleshooting software behavior to maintain optimal performance. My role also includes managing and configuring virtual machines to support various development and production environments.',
     },
     {
